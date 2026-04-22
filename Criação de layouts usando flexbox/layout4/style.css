@@ -1,0 +1,99 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: sans-serif; 
+}
+
+body { 
+    background-color: #0f1115; 
+    padding: 40px; 
+    color: #ffffff; 
+}
+
+.container { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 50px; 
+}
+
+.row { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.section-title { 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
+
+.cards-flex { 
+    display: flex; 
+    gap: 15px; 
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.card-v { 
+    min-width: 160px; 
+    height: 230px; 
+    background-color: #1a1d24; 
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    border: 1px solid #2a2d34;
+    cursor: pointer;
+}
+
+.card-v img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.team-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.live-badge {
+    background-color: #e50914;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.card-h { 
+    flex: 1; 
+    min-width: 250px;
+    height: 180px; 
+    background: linear-gradient(135deg, #1a1d24, #0f1115);
+    border: 1px solid #2a2d34;
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-h-title {
+    font-size: 1.2rem;
+    color: #00ff88;
+}
+
+.card-h-text {
+    font-size: 0.95rem;
+    color: #a0a0a0;
+    line-height: 1.4;
+}

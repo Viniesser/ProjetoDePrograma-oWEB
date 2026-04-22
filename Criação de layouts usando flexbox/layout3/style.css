@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('Torcida-do-Flamengo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 35px;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a, .login-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #666;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-signup {
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+.main-title {
+    font-size: 4.5rem;
+    max-width: 900px;
+    line-height: 1.1;
+}
+
+.sub-text {
+    font-size: 1.2rem;
+    color: #cccccc;
+    max-width: 700px;
+    line-height: 1.5;
+}
+
+.form-group {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.email-input {
+    flex: 2;
+    padding: 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    flex: 1;
+    background-color: #238636;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-outline-white {
+    flex: 1.2;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}

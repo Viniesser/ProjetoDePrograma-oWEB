@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+.news-feed {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+}
+
+.news-item {
+    display: flex;
+    gap: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.news-thumb {
+    width: 300px;
+    height: 170px;
+    object-fit: contain;
+    background-color: #eeeeee;
+}
+
+.news-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.category {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.flamengo {
+    color: #c50000;
+}
+
+.corinthians {
+    color: #333333;
+}
+
+.palmeiras {
+    color: #008000;
+}
+
+.news-title {
+    font-size: 24px;
+    color: #008800;
+    line-height: 1.2;
+}
+
+.news-subtitle {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #888888;
+    margin-top: auto;
+}
