@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    position: relative;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #002244;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.4;
+}
+
+.header-texto {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 10;
+}
+
+.header-texto h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #003366;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #002244;
+    border-radius: 5px;
+}
+
+.conteudo-principal {
+    display: flex;
+    max-width: 1100px;
+    margin: 30px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+main {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section, article {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article {
+    border-left: 5px solid #003366;
+}
+
+h2, h3 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.bloco-conquistas {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.textos-conquistas {
+    flex: 2;
+}
+
+.textos-conquistas ul {
+    list-style-position: inside;
+}
+
+.textos-conquistas li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.img-podio {
+    flex: 1;
+    max-width: 220px;
+    border-radius: 5px;
+}
+
+.img-copa {
+    max-width: 200px;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+aside {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.btn-instagram {
+    display: block;
+    background-color: #e1306c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.caixa-destaque {
+    background-color: #e6f0ff;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #cce0ff;
+}
+
+.caixa-destaque h4 {
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .conteudo-principal {
+        flex-direction: column;
+    }
+    .bloco-conquistas {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
